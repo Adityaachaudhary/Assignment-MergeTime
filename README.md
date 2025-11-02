@@ -31,3 +31,19 @@ mergeTimeRanges(ranges, threshold)
 - `ranges`: Array of [start, end) time ranges
 - `threshold`: Maximum gap (ms) to merge ranges
 - Returns: Sorted, non-overlapping merged ranges
+
+## Examples
+
+```javascript
+// Example 1: Overlapping and threshold merging
+mergeTimeRanges([[1000, 2000], [2500, 4000], [3900, 4100]], 200)
+// Result: [[1000, 2000], [2500, 4100]]
+
+// Example 2: No merging (gaps too large)
+mergeTimeRanges([[0, 10], [15, 20], [25, 30]], 4)
+// Result: [[0, 10], [15, 20], [25, 30]]
+
+// Example 3: All ranges merged
+mergeTimeRanges([[0, 10], [12, 15], [17, 25], [27, 35]], 3)
+// Result: [[0, 35]]
+```
