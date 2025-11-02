@@ -1,0 +1,14 @@
+{
+  "name": "merge-time-ranges",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "main": "mergeTimeRanges.js",
+  "description": "Merges time ranges with threshold-based gap handling",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node example.js"
+  },
+  "keywords": ["time", "ranges", "merge", "intervals"],
+  "author": "",
+  "license": "ISC"
+}
